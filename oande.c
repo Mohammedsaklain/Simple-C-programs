@@ -1,3 +1,4 @@
+//find the odd and even numbers repeated 
 #include<stdio.h>
 int main()
 {
