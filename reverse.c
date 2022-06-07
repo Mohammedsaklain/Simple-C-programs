@@ -8,7 +8,7 @@ int a[10],i;
     {
     scanf("%d",&a[i]);
     }
-  printf("the array elements in reverse order are");
+  printf("the array elements in reverse order are\n");
     for(i=2;i>=0;i--)
       {
         printf("%d\t",a[i]);
