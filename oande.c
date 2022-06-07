@@ -7,7 +7,6 @@ int main()
   for(i=0;i<10;i++)
     {
       scanf("%d",&a[i]);
-    
     }
   even=0;
   odd=0;
@@ -16,12 +15,11 @@ int main()
       if(a[i]%2==0)
       {
         even=even+1;
-        printf("%d\t",a[i]);
       }
       else
-      { odd=odd+1;
-      printf("%d\t",a[i]);
+      {
+       odd=odd+1;
       }
     }
-  printf("the elements %d even and %d odd",even,odd);
+  printf("there are %d even and %d odd numbers\n",even,odd);
 }
