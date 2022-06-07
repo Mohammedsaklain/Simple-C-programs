@@ -1,3 +1,4 @@
+// copy the one array elements into other array
 #include<stdio.h>
 int main()
 {
