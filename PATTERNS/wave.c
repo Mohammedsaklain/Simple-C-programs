@@ -1,3 +1,5 @@
+/* To print the wave pattern*/
+
 #include<stdio.h>
 int main()
 {
