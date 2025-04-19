@@ -1,0 +1,28 @@
+all: welcome main main2 run_both
+
+welcome:
+	@echo "Welcome Mohammed Saklain"		# Suppress command output displaying
+
+main: Digital_Clock.c					# Main depends on its source file
+	@cc -std=c99 -Wall Digital_Clock.c -o Result
+
+main2: HW2.c
+	@cc -std=c99 -Wall HW2.c -o Result2
+run: Digital_Clock.c
+	@./Result
+
+run_both: main main2
+	@./Result & ./Result2
+
+clean:
+	@rm *.exe
+
+help:
+	@echo "Available commands:"
+	@echo "  make         - Builds and runs all targets"
+	@echo "  make welcome - Displays a welcome message"
+	@echo "  make main    - Compiles Hello_World.c to Result"
+	@echo "  make main2   - Compiles HW2.c to Result2"
+	@echo "  make run_both- Runs both Result and Result2 executables in parallel"
+	@echo "  make clean   - Removes all compiled executables "
+	@echo "  make help    - Displays this help message"

@@ -1,0 +1,20 @@
+all: welcome main run
+
+welcome:
+	@echo "WELCOME - Program executing"
+	@echo "---------------------------"
+main: MC_Blink.c				
+	@cc -std=c99 -Wall MC_Blink.c -o Result
+run: 
+	@./Result
+clean:
+	@rm *.exe
+	@echo "Clean Complete"
+help:
+	@echo "Available commands:"
+	@echo "  make         - Builds and runs all targets"
+	@echo "  make welcome - Displays a welcome message"
+	@echo "  make main    - Compiles MC_Blink.c to Result"
+	@echo "  make clean   - Removes all compiled executables "
+	@echo "  make help    - Displays this help message"
+#variables
